@@ -216,9 +216,46 @@ default:
 //: ## Functions
 //: A function in Swift is nothing more than a collection of instructions that accomplish some task. The advantage to grouping the instructions into a function is that the function can then be called whenever that task should be performed, rather than having to list out those instrutions a second, third, or nth time.
 
+func averageScore(_ scores: [Int]) {
+    // total divided by the number of scores
+    var totalScore = 0
+    for score in scores {
+        totalScore += score
+    }
+    
+    let score = totalScore / scores.count
+    printOutAverageScore(score)
+}
 
+func averageScoreWithPrecision(_ scores: [Int]) -> Double {
+    var totalScore: Double = 0
+    for score in scores {
+        totalScore += Double(score)
+    }
+    return totalScore / Double(scores.count)
+}
 
-//: ## Tuples
+func printOutAverageScore(_ score: Int) {
+    print("The average score is \(score)")
+}
+averageScore(scores)
+
+let otherScores = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+averageScore(otherScores)
+
+let preciseAvgScore = averageScoreWithPrecision(scores)
+
+// Every function has internal and external parameter names - Readability purposed
+func printMyName(_ name: String) {
+    print(name)
+}
+
+//: ## Tuples (Pronounced - "Tooples") lol
 //: Tuples are a lightweight way of grouping related values into a single compound value.
+// Use tuple to create inventory item - must contain name, aisle, category, count
+let carrots = (name: "Carrots", aisle: 4, category: "produce", count: 25)
 
+print(carrots.aisle)
 
+print(carrots.category)
