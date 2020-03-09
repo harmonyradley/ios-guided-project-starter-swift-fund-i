@@ -13,7 +13,7 @@ print(helloWorld)
 // A single line comment is one with two slashes as the first characters
 // Hello this is a comment
 // This is another comment and now I'm going to make it really long so that it wraps to the next linee sflasdfasfadsfdsfsfsfasdfsfsaf.
-// Highlight what you want commented out and do Command + / 
+// Highlight what you want commented out and do Command + /
 
 /*
  * A multi-line comment
@@ -21,10 +21,18 @@ print(helloWorld)
  * /* and */ characters
  */
 
-//: ## Identifiers
+//: ## Identifiers - Constant and Variable Names (Containers that hold values)
 //: first character A-Z or a-z or _, followed by any of these plus 0-9
+//: Camel Case - first letter of every word (after the first word) starts with a capital letter
 
+// This is snake case, and it's real real bad
+let this_is_a_container = "Hi container"
 
+let thisIsAContainer = "Hi camel case container"
+let lambdaSchool = "awesome"
+let ls100 = "100%"
+let _travelBack = "1985"
+print("Lambda School is \(ls100) \(lambdaSchool)")
 
 //: ## Mutability
 //: There are two kinds of containers that hold values in Swift. One kind is called a constant, because once a value has been set, it cannot change for the lifetime of that container. Constants are declared with the `let` keyword.
