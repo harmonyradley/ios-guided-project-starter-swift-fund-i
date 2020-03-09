@@ -151,23 +151,67 @@ moreCaptains.remove(at: 2)
 
 print(moreCaptains)
 
-// Ordered collection of like elements 
+// Ordered collection of like elements
 
 //: ### Dictionaries
 //: A Swift dictionary is similar to an array in that is a collection, but the items are stored in no particular order. To access an item, its associated key is provided. Dictionaries are also called "key-value" stores. The key has a type, and the value can have the same or a different type.
-
+                    //Key   // Value
+var occupations = ["Tim" : "Firefighter", "John" : "iOS Engineer", "Murphy" : "Web Developer", "Josh" : "Web Developer"]
+//print(occupations["John"])
+occupations["Josh"]
 
 
 //: ## Looping
 //: ### `for`
 //: `for` loops allow for iterating over a collection of elements (usually an array), examining each element in turn.
 
+let scores = [75, 43, 103, 87, 12]
+var passingStudents = 0
+for score in scores {
+    if score > 70 {
+        passingStudents += 1
+    }
+}
 
+print("\(passingStudents) students scored a passing grade of 70 or higher.")
 
 //: ### `switch`
 //: `switch` statements are useful when a multiple-choice path is possible for your code, and you want to choose a single path at runtime, based on some criteria.
 
+let number = 6
 
+switch number {
+case 1:
+    print("Got 1")
+case 2:
+    print("Got 2")
+case 3, 4, 5: // Multiple cases
+    print("Got 3 or 4 or 5")
+case 6...22:
+    print("Got 6 to 22")
+default:
+    print("Got Default")
+}
+
+let character = "z"
+
+switch character {
+case "a", "e", "i", "o", "u":
+    print("The character is a vowel")
+default:
+    print("The character is a consonant")
+}
+
+let furniture = "Chair"
+
+switch furniture {
+case "Table":
+    print("Got Table")
+case "Chair", "Stool", "Bench":
+    print("Got something to sit on")
+default:
+    print("Default")
+}
 
 //: ## Functions
 //: A function in Swift is nothing more than a collection of instructions that accomplish some task. The advantage to grouping the instructions into a function is that the function can then be called whenever that task should be performed, rather than having to list out those instrutions a second, third, or nth time.
