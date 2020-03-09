@@ -2,12 +2,19 @@
 //: ## Hello, World!
 //: As tradition dictates, any exploration of a new language needs to start with "hello, world"
 
+// Constant
 
+let helloWorld = "Hello World!"
+print(helloWorld)
 
 //: ## Comments
 //: A comment is text that is ignored by the compiler. So it can be plain text, or even code. If it formatted like the examples below, it will be completely ignored when the project is built. Comments are notes to yourself or others about how a given block of code functions.
 
 // A single line comment is one with two slashes as the first characters
+// Hello this is a comment
+// This is another comment and now I'm going to make it really long so that it wraps to the next linee sflasdfasfadsfdsfsfsfasdfsfsaf.
+// Highlight what you want commented out and do Command + / 
+
 /*
  * A multi-line comment
  * is one that is bounded by
